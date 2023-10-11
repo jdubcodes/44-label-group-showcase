@@ -1,11 +1,12 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Header() {
   return (
-    <header className='flex w-full justify-evenly p-4'>
+    <header className='flex w-full justify-evenly p-4 m-auto'>
       <nav>
-        <ul className='flex gap-10 grow'>
-          <li>
+        <ul className='flex gap-10 items-center'>
+          <li className='grow'>
             <Link href='/' className='text-black'>
               FW23 | BLAME SOCIETY
             </Link>
@@ -15,7 +16,12 @@ export default function Header() {
               SS23 | FULL OF FIRE
             </Link>
           </li>
-          <div className='bg-[url("/44_LOGO_transparent.avif")] w-[340px] h-[50px] bg-no-repeat'></div>
+          <Image
+            src='/44_LOGO_transparent.avif'
+            alt='logo'
+            width={237}
+            height={50}
+          />
           <li>
             <Link href='/' className='text-black'>
               FW22 | SCREWED UP
