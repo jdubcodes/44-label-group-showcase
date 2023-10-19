@@ -3,10 +3,10 @@ import Image from 'next/image'
 
 export default function Header() {
   return (
-    <header className='flex w-full justify-evenly p-4 m-auto'>
-      <nav>
-        <ul className='flex gap-10 items-center'>
-          <li className='grow'>
+    <header className='w-full p-4'>
+      <nav className='w-full'>
+        <ul className=' w-full flex items-center justify-center gap-7'>
+          <li>
             <Link href='/' className='text-black'>
               FW23 | BLAME SOCIETY
             </Link>
@@ -19,8 +19,9 @@ export default function Header() {
           <Image
             src='/44_LOGO_transparent.avif'
             alt='logo'
-            width={237}
+            width={232}
             height={50}
+            className='m-auto'
           />
           <li>
             <Link href='/' className='text-black'>
