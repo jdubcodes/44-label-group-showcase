@@ -1,17 +1,14 @@
-import Image from 'next/image'
+import Header from './components/Header'
 import Fw23Images from './components/Fw23Images'
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between bg-[#f5f2f7]'>
-      <Image
-        src='/44_LOGO_transparent.avif'
-        alt='logo'
-        width={340}
-        height={200}
-        className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-100 hover:opacity-5'
-      />
+    <main className='min-h-screen bg-[#f5f2f7]'>
+      <Header />
       <Fw23Images />
+      <p className='fixed text-black -rotate-90 -left-[4.25rem] bottom-[6.25rem] z-10'>
+        FW23 | BLAME SOCIETY
+      </p>
     </main>
   )
 }

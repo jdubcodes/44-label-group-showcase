@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Header() {
   return (
-    <header className='w-full p-4'>
+    <header className='w-full py-2 px-10 sticky'>
       <nav className='w-full'>
         <ul className=' w-full flex items-center justify-center gap-7'>
           <li>
@@ -19,8 +19,8 @@ export default function Header() {
           <Image
             src='/44_LOGO_transparent.avif'
             alt='logo'
-            width={232}
-            height={50}
+            width={180}
+            height={40}
             className='m-auto'
           />
           <li>
